@@ -73,7 +73,8 @@ HostController.testHost = async hosts => {
 HostController.exportList = () => {
     HostController.getHosts().then(hosts => {
         let data = JSON.stringify(hosts);
-        fs.writeFileSync('test.json', data);    
+        fs.writeFileSync('test.json', data);   
+        console.log("FILE CREATED!!!") 
     });
 }
         
